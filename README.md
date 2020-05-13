@@ -32,24 +32,30 @@ What are the types of ICH?
 
 There are four types of ICH:
 
-    epidural hematoma
-    subdural hematoma
-    subarachnoid hemorrhage
-    intracerebral hemorrhage
+    Epidural Hematoma
+    Subdural Hematoma
+    Subarachnoid Hemorrhage
+    Intracerebral Hemorrhage
 
-Epidural hematoma
+### Epidural Hematoma
 
 A hematoma is a collection of blood, in a clot or ball, outside of a blood vessel. An epidural hematoma occurs when blood accumulates between your skull and the outermost covering of your brain.
 
 It typically follows a head injury, and usually with a skull fracture. High-pressure bleeding is a prominent feature. If you have an epidural hematoma, you may briefly lose consciousness and then regain consciousness.
-Subdural hematoma
+
+### Subdural Hematoma:
 
 A subdural hematoma is a collection of blood on the surface of your brain.
 
 It’s typically the result of your head moving rapidly forward and stopping, such as in a car accident. However, it could also suggest abuse in children. This is the same type of movement a child experiences when being shaken.
 
 A subdural hematoma is more common than other ICHs in older people and people with history of heavy alcohol use.
-Intracerebral hemorrhage
+
+### Subarachnoid Hemorrhage:
+
+A subarachnoid hemorrhage caused by a ruptured aneurysm. As blood fills the space between the brain and skull, a blood clot forms, causing increased pressure on the brain.
+
+### Intracerebral Hemorrhage:
 
 Intracerebral hemorrhage is when there’s bleeding inside of your brain. This is the most common type of ICH that occurs with a stroke. It’s not usually the result of injury.
 
