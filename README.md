@@ -1,34 +1,87 @@
-# RSNA-Intracranial-Hemorrhage-Detection
+# Intracranial Hemorrhage Detection
+## Identify acute intracranial hemorrhage and its subtypes
 
-**Primary Objective:**-Identify acute intracranial hemorrhage and its subtypes
+**Author**: SHAILESH DHAMA
+    
+### GOAL/MOTIVE OF THE PROBLEM:
 
-Bleeding, also called hemorrhage, is the name used to describe blood loss. It can refer to blood loss inside the body, called internal bleeding, or to blood loss outside of the body, called external bleeding.
+To build an algorithm to detect acute intracranial hemorrhage and its subtypes.
 
-Intracranial hemorrhage, bleeding that occurs inside the cranium, is a serious health problem requiring rapid and often intensive medical treatment. For example, intracranial hemorrhages account for approximately 10% of strokes in the U.S., where stroke is the fifth-leading cause of death. Identifying the location and type of any hemorrhage present is a critical step in treating the patient.
+### Dataset: https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection/data
 
-Diagnosis requires an urgent procedure. When a patient shows acute neurological symptoms such as severe headache or loss of consciousness, highly trained specialists review medical images of the patient’s cranium to look for the presence, location and type of hemorrhage. The process is complicated and often time consuming.
+### Required Libraries:
 
-In this competition, your challenge is to build an algorithm to detect acute intracranial hemorrhage and its subtypes.
+    1.Numpy
+    2.Pandas
+    3.Matplotlib
+    4.Seaborn
+    5.Pydicom
+    6.Scikit-image
+    7.Scikit-learn
+    8.Keras
 
-You’ll develop your solution using a rich image dataset provided by the Radiological Society of North America (RSNA®) in collaboration with members of the American Society of Neuroradiology and MD.ai.
+## STEPS:
 
-If successful, you’ll help the medical community identify the presence, location and type of hemorrhage in order to quickly and effectively treat affected patients.
+- Data Cleaning and Preprocessing
+- Overview of DICOM files and medical images
+- Data Visualisation
+- Clustering subtypes of Intracranial Hemorrhage
+    - Visualization of hemorrhage epidural
+    - Visualization of hemorrhage intraparenchymal
+    - Visualization of hemorrhage intraventricular
+    - Visualization of hemorrhage subarachnoid
+    - Visualization of hemorrhage subdural
 
-Challenge participants may be invited to present their AI models and methodologies during an award ceremony at the RSNA Annual Meeting which will be held in Chicago, Illinois, USA, from December 1-6, 2019.
+## RESULTS :
 
+#### Graphical Visualisations:
 
-**Hemorrhage Types**
+![category_explore](./HEMM1.png)
+> Exploring categories graphically.
 
-Hemorrhage in the head (intracranial hemorrhage) is a relatively common condition that has many causes ranging from trauma, stroke, aneurysm, vascular malformations, high blood pressure, illicit drugs and blood clotting disorders. The neurologic consequences also vary extensively depending upon the size, type of hemorrhage and location ranging from headache to death. The role of the Radiologist is to detect the hemorrhage, characterize the hemorrhage subtype, its size and to determine if the hemorrhage might be jeopardizing critical areas of the brain that might require immediate surgery.
+![pixel_distribute](./HEMM2.png)
+> Pixel Unit Distributions
 
-While all acute (i.e. new) hemorrhages appear dense (i.e. white) on computed tomography (CT), the primary imaging features that help Radiologists determine the subtype of hemorrhage are the location, shape and proximity to other structures (see table).
+![width_distribution](./HEMM5.png)
+> Width DIstribution of Images
 
-Intraparenchymal hemorrhage is blood that is located completely within the brain itself; intraventricular or subarachnoid hemorrhage is blood that has leaked into the spaces of the brain that normally contain cerebrospinal fluid (the ventricles or subarachnoid cisterns). Extra-axial hemorrhages are blood that collects in the tissue coverings that surround the brain (e.g. subdural or epidural subtypes). ee figure.) Patients may exhibit more than one type of cerebral hemorrhage, which c may appear on the same image. While small hemorrhages are less morbid than large hemorrhages typically, even a small hemorrhage can lead to death because it is an indicator of another type of serious abnormality (e.g. cerebral aneurysm). 
+![width_distribution](./Sub_type_RSNA.JPG)
+> Total Images by Subtype
 
-What is an intracranial hemorrhage
+#### Medical Images Visualisations:
+
+![scale_masking](./HEMM3.png)
+> Rescaling and masking of DICOM
+
+![pixel_spacing](./HEMM4.png)
+> Pixel spacing
+
+![diverging maps](./HEMM6.png)
+> DICOM representation using diverging colormaps
+
+![dicom_overview](./HEMM7.png)
+> Overview of DICOM files and medical images
+
+![epidural](./Epidural.JPG)
+> Visualization of hemorrhage epidural
+
+![parenchymal](./Intraparaenchymal.JPG)
+> Visualization of hemorrhage intraparenchymal
+
+![ventricular](./Intraventtricular.JPG)
+> Visualization of hemorrhage intraventricular
+
+![archanoid](./Subarchanoid.JPG)
+> Visualization of hemorrhage subarachnoid
+
+![dural](./Subdural.JPG)
+> Visualization of hemorrhage subdural
+
+## Medical Description:
 
 Intracranial hemorrhage (ICH) refers to acute bleeding inside your skull or brain. It’s a life-threatening emergency. You should go to the emergency room right away or call 911 if you think you or someone you know is experiencing ICH.
-What are the types of ICH?
+
+![meninges](./Meninges-en.png)
 
 There are four types of ICH:
 
@@ -36,6 +89,9 @@ There are four types of ICH:
     Subdural Hematoma
     Subarachnoid Hemorrhage
     Intracerebral Hemorrhage
+
+![subtypes](./subtypes-of-hemorrhage.png)
+> Subtypes Of Hemorrhage
 
 ### Epidural Hematoma
 
@@ -68,3 +124,15 @@ A prominent warning sign is the sudden onset of neurological deficit. This is a 
     decreased consciousness
     weakness in one part of the body
     elevated blood pressure
+
+### For further information
+Please review the narrative of our analysis in [our jupyter notebook](./acute-intracranial-hemorrhage-detection.ipynb)
+
+For any additional questions, please contact **shaileshshettyd@gmail.com)
+
+##### Repository Structure:
+```
+├── README.md                                                   <- The top-level README for reviewers of this project.
+├── acute-intracranial-hemorrhage-detection.ipynb               <- narrative documentation of analysis in jupyter notebook
+└── images                                                      <- both sourced externally and generated from code
+```
